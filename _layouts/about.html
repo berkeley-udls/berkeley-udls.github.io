@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">About UDLS</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <h2>Leadership</h2>
+  {%- assign leaders = site.speakers | where: 'leadership', true -%}
+  {% for leader in leaders %}
+    <h3 style="margin-bottom: 0px;"><a href="{{ leader.homepage }}">{{ leader.name }}</a></h3>
+    <p class="post-meta">{{ leader.email }}</p>
+    <p>{{ leader.content }}</p>
+  {% endfor %}
+
+  <br />
+
+  <h2>Past Speakers</h2>
+  <ul>
+    {% for speaker in site.speakers %}
+      {%- assign filtered_posts = site.lectures | where: 'speaker', speaker.short_name -%}
+      {% if filtered_posts.size > 0 %}
+        <li>
+            <p><a href="{{ speaker.url }}">{{ speaker.name }}</a></p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+</article>

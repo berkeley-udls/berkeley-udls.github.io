@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.name }}</h1>
+    <p class="post-meta">
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="jobTitle">{{ page.position }}</span></span>
+        {% if page.leadership %}
+        &middot; Leadership Team
+        {% endif %}
+    </p>
+  </header>
+
+{{ content }}
+
+<br />
+
+{%- assign filtered_posts = site.lectures | where: 'speaker', page.short_name -%}
+{% if filtered_posts.size > 0 %}
+<h2>Lectures</h2>
+<ul>
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  {% for post in filtered_posts %}
+    <li><span class="post-meta">{{ post.date | date: date_format }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}

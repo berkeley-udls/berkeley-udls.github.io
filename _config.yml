@@ -1,0 +1,64 @@
+
+# Global settings
+## These are used to personalize your new site. If you look in the HTML files,
+## you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+## You can create any custom variable you would like, and they will be accessible
+## in the templates via {{ site.myvariable }}.
+
+title: UDLS @ UC Berkeley
+# email: vanshaj@berkeley.edu
+description: >-
+  The Undistinguished Lecture Series at UC Berkeley is a TED-style
+  venture where anyone can give a lecture about any topic they wish.
+  Inspired by UDLS @ UBC.
+baseurl: ""
+url: "https://berkeley-udls.github.io"
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  lectures:
+    output: true
+    permalink: /lecture/:title
+  speakers:
+    output: true
+    permalink: /speaker/:title
+
+defaults:
+  - scope:
+      path: ""
+      type: "lectures"
+    values:
+      layout: "lecture"
+  - scope:
+      path: ""
+      type: "speakers"
+    values:
+      layout: "speaker"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
