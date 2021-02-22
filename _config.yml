@@ -6,13 +6,18 @@
 ## in the templates via {{ site.myvariable }}.
 
 title: UDLS @ UC Berkeley
-# email: vanshaj@berkeley.edu
+email: udls@berkeley.edu
 description: >-
   The Undistinguished Lecture Series at UC Berkeley is a TED-style
   venture where anyone can give a lecture about any topic they wish.
-  Inspired by UDLS @ UBC.
+  Inspired by <a href="https://www.cs.ubc.ca/~udls/">UDLS @ UBC</a>.
 baseurl: ""
 url: "https://berkeley-udls.github.io"
+author: Managed by ASEs in EECS
+
+# Core team
+core_team:
+  - vanshaj
 
 # Build settings
 plugins:

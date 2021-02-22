@@ -11,12 +11,21 @@ layout: default
     {{ content }}
   </div>
 
-  <h2>Leadership</h2>
+  <h2>Leadership Team</h2>
   {%- assign leaders = site.speakers | where: 'leadership', true -%}
   {% for leader in leaders %}
-    <h3 style="margin-bottom: 0px;"><a href="{{ leader.homepage }}">{{ leader.name }}</a></h3>
-    <p class="post-meta">{{ leader.email }}</p>
-    <p>{{ leader.content }}</p>
+    {% if site.core_team contains leader.short_name %}
+      <h3 style="margin-bottom: 0px;"><a href="{{ leader.homepage }}">{{ leader.name }}</a></h3>
+      <p class="post-meta">{{ leader.email }}</p>
+      <p>{{ leader.content }}</p>
+    {% endif %}
+  {% endfor %}
+  {% for leader in leaders %}
+    {% unless site.core_team contains leader.short_name %}
+      <h3 style="margin-bottom: 0px;"><a href="{{ leader.homepage }}">{{ leader.name }}</a></h3>
+      <p class="post-meta">{{ leader.email }}</p>
+      <p>{{ leader.content }}</p>
+    {% endunless %}
   {% endfor %}
 
   <br />
