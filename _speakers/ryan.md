@@ -1,5 +1,5 @@
 ---
-short_name: Ryan
+short_name: ryan
 name: Ryan Moughan
 position: Graduate Student
 
