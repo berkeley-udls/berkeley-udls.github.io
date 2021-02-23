@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{%- assign images_base = "https://raw.githubusercontent.com/berkeley-udls/website-images/master" -%}
+
 <article class="post">
 
   <header class="post-header">
@@ -12,21 +14,33 @@ layout: default
   </div>
 
   <h2>Leadership Team</h2>
+  <table>
   {%- assign leaders = site.speakers | where: 'leadership', true -%}
   {% for leader in leaders %}
     {% if site.core_team contains leader.short_name %}
-      <h3 style="margin-bottom: 0px;"><a href="{{ leader.homepage }}">{{ leader.name }}</a></h3>
-      <p class="post-meta">{{ leader.email }}</p>
-      <p>{{ leader.content }}</p>
+      <tr>
+        <td><img src="{{ images_base }}/{{ site.semester }}/{{ leader.short_name }}.jpg" alt=""></td>
+        <td>
+          <h3 style="margin-bottom: 0px;"><a href="{{ leader.homepage }}">{{ leader.name }}</a></h3>
+          <p class="post-meta">{{ leader.email }}</p>
+          <p>{{ leader.content }}</p>
+        </td>
+      </tr>
     {% endif %}
   {% endfor %}
   {% for leader in leaders %}
     {% unless site.core_team contains leader.short_name %}
-      <h3 style="margin-bottom: 0px;"><a href="{{ leader.homepage }}">{{ leader.name }}</a></h3>
-      <p class="post-meta">{{ leader.email }}</p>
-      <p>{{ leader.content }}</p>
+      <tr>
+        <td><img src="{{ images_base }}/{{ site.semester }}/{{ leader.short_name }}.jpg" alt=""></td>
+        <td>
+          <h3 style="margin-bottom: 0px;"><a href="{{ leader.homepage }}">{{ leader.name }}</a></h3>
+          <p class="post-meta">{{ leader.email }}</p>
+          <p>{{ leader.content }}</p>
+        </td>
+      </tr>
     {% endunless %}
   {% endfor %}
+  </table>
 
   <br />
 
