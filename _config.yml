@@ -15,7 +15,7 @@ description: >-
   Inspired by <a href="https://www.cs.ubc.ca/~udls/">UDLS @ UBC</a>.
 baseurl: ""
 url: "https://berkeley-udls.github.io"
-author: Managed by ASEs in EECS
+author: Organized by TAs in EECS
 
 # Core team
 core_team:
