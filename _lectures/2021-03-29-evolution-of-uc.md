@@ -1,7 +1,7 @@
 ---
 layout: lecture
 title:  "[Placeholder] 1 to 10: Evolution of the UC System"
-date:   2021-02-22
+date:   2021-03-29
 speaker:   oski
 ---
 
