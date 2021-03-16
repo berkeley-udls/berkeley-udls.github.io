@@ -13,8 +13,9 @@ layout: default
 
   {%- if site.lectures.size > 0 -%}
     <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Past Lectures" }}</h2> -->
+    {% assign lectures = site.lectures | sort: 'date' | reverse %}
     <ul class="post-list">
-      {%- for lecture in site.lectures -%}
+      {%- for lecture in lectures -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {%- assign speaker = site.speakers | where: 'short_name', lecture.speaker | first -%}

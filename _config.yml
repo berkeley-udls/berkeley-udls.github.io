@@ -5,6 +5,8 @@
 ## You can create any custom variable you would like, and they will be accessible
 ## in the templates via {{ site.myvariable }}.
 
+future: true
+
 semester: sp21
 
 title: UDLS @ UC Berkeley
