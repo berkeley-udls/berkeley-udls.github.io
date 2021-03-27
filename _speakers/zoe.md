@@ -8,5 +8,5 @@ email: zap.plaxco@berkeley.edu
 homepage: https://www.linkedin.com/in/zoe-plaxco/
 ---
 
-Zoe is heading into graduate studies in Computer Science 
-education, with a focus on accessability. 
+Zoe is heading into graduate studies in Computer Science education, with a focus
+on accessability.

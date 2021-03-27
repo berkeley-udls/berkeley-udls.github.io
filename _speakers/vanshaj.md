@@ -8,5 +8,5 @@ email: vanshaj@berkeley.edu
 homepage: https://imvs.me
 ---
 
-Vanshaj is a second-year undergraduate student studying
-Computer Science and Data Science.
+Vanshaj is a second-year undergraduate student studying Computer Science and
+Data Science.

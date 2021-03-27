@@ -8,5 +8,5 @@ email: amritapv@berkeley.edu
 homepage: https://amritapalaparthi.com
 ---
 
-Amrita is a third-year undergraduate student studying
-Electrical Engineering and Computer Science.
+Amrita is a third-year undergraduate student studying Electrical Engineering and
+Computer Science.
