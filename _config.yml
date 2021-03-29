@@ -27,6 +27,7 @@ core_team:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 collections:
   lectures:
