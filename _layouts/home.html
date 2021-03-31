@@ -19,7 +19,12 @@ layout: default
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {%- assign speaker = site.speakers | where: 'short_name', lecture.speaker | first -%}
-        <span class="post-meta">{{ lecture.date | date: date_format }} &middot; <a href="{{speaker.url}}">{{ speaker.name }}</a></span>
+        <span class="post-meta">
+          {{ lecture.date | date: date_format }} &middot; <a href="{{speaker.url}}">{{ speaker.name }}</a>
+          {%- if lecture.recording -%}
+            &nbsp;&middot; <a href="{{lecture.recording}}" target="_blank">Recording</a>
+          {%- endif -%}
+        </span>
         <h3>
           <a class="post-link" href="{{ lecture.url | relative_url }}">
             {{ lecture.title | escape }}

@@ -12,8 +12,12 @@ layout: default
       </time>
       {%- if page.speaker -%}
         {% assign speaker = site.speakers | where: 'short_name', page.speaker | first %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="{{speaker.url}}">{{ speaker.name }}</a></span></span>
-      {%- endif -%}</p>
+        &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="{{speaker.url}}">{{ speaker.name }}</a> </span></span>
+      {%- endif -%}
+      {%- if page.recording -%}
+        &middot; <a href="{{page.recording}}" target="_blank">Recording</a>
+      {%- endif -%}
+    </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
