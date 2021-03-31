@@ -1,7 +1,7 @@
 ---
 layout: lecture
 title:  "COVID from a CS Perspective"
-date:   2021-04-12
+date:   2021-04-05
 speaker:   weaver
 ---
 

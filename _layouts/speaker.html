@@ -3,14 +3,14 @@ layout: default
 ---
 
 <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.name }}</h1>
-    <p class="post-meta">
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="jobTitle">{{ page.position }}</span></span>
-        {% if page.leadership %}
-        &middot; Leadership Team
-        {% endif %}
-    </p>
-  </header>
+  <h1 class="post-title p-name" itemprop="name headline">{{ page.name }}</h1>
+  <p class="post-meta">
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="jobTitle">{{ page.position }}</span></span>
+      {% if page.leadership %}
+      &middot; Leadership Team
+      {% endif %}
+  </p>
+</header>
 
 {{ content }}
 

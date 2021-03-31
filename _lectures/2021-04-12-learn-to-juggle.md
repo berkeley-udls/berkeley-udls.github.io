@@ -1,7 +1,7 @@
 ---
 layout: lecture
 title:  "Learn to Juggle!"
-date:   2021-04-05
+date:   2021-04-12
 speaker:   dan
 ---
 
