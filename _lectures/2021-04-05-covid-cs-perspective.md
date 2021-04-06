@@ -3,6 +3,7 @@ layout: lecture
 title:  "COVID from a CS Perspective"
 date:   2021-04-05
 speaker:   weaver
+recording: https://youtu.be/MOmmztwvjIs
 ---
 
 I am not an epidemiologist, but my initial research specialty, computer viruses,
