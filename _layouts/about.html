@@ -16,7 +16,7 @@ layout: default
   <h2>Leadership Team</h2>
   <table>
   {%- assign leaders = site.speakers | where: 'leadership', true -%}
-  {% for leader in leaders %}
+  {% for leader in leaders reversed %}
     {% if site.core_team contains leader.short_name %}
       <tr>
         <td><img src="{{ images_base }}/{{ site.semester }}/{{ leader.short_name }}.jpg" alt=""></td>
