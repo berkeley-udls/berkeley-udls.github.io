@@ -3,6 +3,7 @@ layout: lecture
 title:  "Learn to Juggle!"
 date:   2021-04-12
 speaker:   dan
+recording: https://youtu.be/XerZwWzPe_M
 ---
 
 All levels of jugglers welcome to this UDLS lecture! We'll teach the basics to
