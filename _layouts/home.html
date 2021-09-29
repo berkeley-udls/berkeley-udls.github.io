@@ -11,10 +11,10 @@ layout: default
 
   <br />
 
+  {% assign semester = page.semester or site.semester %}
+  {% assign lectures = site.lectures | sort: 'date' | reverse | where:"semester",semester %}
   {%- if lectures.size > 0 -%}
     <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Past Lectures" }}</h2> -->
-    {% assign semester = page.semester or site.semester %}
-    {% assign lectures = site.lectures | sort: 'date' | reverse | where:"semester",semester %}
     <ul class="post-list">
       {%- for lecture in lectures -%}
       <li>
