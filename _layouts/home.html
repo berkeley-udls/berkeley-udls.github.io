@@ -11,7 +11,11 @@ layout: default
 
   <br />
 
-  {% assign semester = page.semester or site.semester %}
+  {%- if page.semester -%}
+    {%- assign semester = page.semester -%}
+  {%- else -%}
+    {%- assign semester = site.semester -%}
+  {%- endif -%}
   {% assign lectures = site.lectures | sort: 'date' | reverse | where:"semester",semester %}
   {%- if lectures.size > 0 -%}
     <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Past Lectures" }}</h2> -->
