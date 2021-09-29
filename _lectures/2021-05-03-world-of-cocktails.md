@@ -4,6 +4,7 @@ title:  "A Brief Introduction to the World of Cocktails"
 date:   2021-05-03
 speaker:   ball
 recording: https://youtu.be/6ScZwLDmi78
+semester: sp21
 ---
 
 This will be a talk with a bit of history, some science and some demos about

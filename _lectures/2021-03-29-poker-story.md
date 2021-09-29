@@ -4,6 +4,7 @@ title:  "Cards, Coolers, and Community: A Poker Story"
 date:   2021-03-29
 speaker:   jay-eric
 recording: https://youtu.be/QtmtEHbfnOI
+semester: sp21
 ---
 
 Starting in the late summer of 2020, Jay, Eric, and some friends in UPE met

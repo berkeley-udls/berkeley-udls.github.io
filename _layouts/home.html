@@ -11,9 +11,10 @@ layout: default
 
   <br />
 
-  {%- if site.lectures.size > 0 -%}
+  {%- if lectures.size > 0 -%}
     <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Past Lectures" }}</h2> -->
-    {% assign lectures = site.lectures | sort: 'date' | reverse %}
+    {% assign semester = page.semester or site.semester %}
+    {% assign lectures = site.lectures | sort: 'date' | reverse | where:"semester",semester %}
     <ul class="post-list">
       {%- for lecture in lectures -%}
       <li>
@@ -36,6 +37,8 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
+  {%- else -%}
+  <p>Past and scheduled lectures will be listed here :)</p>
   {%- endif -%}
 
 </div>

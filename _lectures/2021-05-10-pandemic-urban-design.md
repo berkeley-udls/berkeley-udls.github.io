@@ -4,6 +4,7 @@ title:  "How a Bicycle Became my Best Friend: A Take on Urban Design in a Pandem
 date:   2021-05-10
 speaker:   namrata
 recording: https://youtu.be/PipKIzdhGdU
+semester: sp21
 ---
 
 The pandemic has changed the way we use space. In particular, the virtual

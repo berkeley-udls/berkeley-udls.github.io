@@ -4,6 +4,7 @@ title:  "Getting Rich Slowly! Everything you need to know about Personal Finance
 date:   2021-04-26
 speaker:   alex
 recording: https://youtu.be/fVelWZEHGZE
+semester: sp21
 ---
 
 Compound interest is magical, and small tweaks and habits with regards to

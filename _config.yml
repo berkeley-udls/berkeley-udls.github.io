@@ -7,7 +7,7 @@
 
 future: true
 
-semester: sp21
+semester: fa21
 
 title: UDLS @ UC Berkeley
 email: udls@berkeley.edu
@@ -22,7 +22,6 @@ author: Organized by TAs in EECS
 # Core team
 core_team:
   - vanshaj
-  - amrita
 
 # Build settings
 plugins:
@@ -37,6 +36,9 @@ collections:
   speakers:
     output: true
     permalink: /speaker/:title
+  archive:
+    output: true
+    permalink: /archive/:title
 
 defaults:
   - scope:
@@ -49,6 +51,11 @@ defaults:
       type: "speakers"
     values:
       layout: "speaker"
+  - scope:
+      path: ""
+      type: "archive"
+    values:
+      layout: "home"
   - scope:
       path: ""
     values:

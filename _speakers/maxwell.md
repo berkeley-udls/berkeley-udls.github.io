@@ -8,5 +8,5 @@ email: maxhchen@berkeley.edu
 homepage: https://maxwellchen.dev/
 ---
 
-Maxwell is a third-year undergraduate student studying Computer Science and
+Maxwell is a fourth-year undergraduate student studying Computer Science and
 Bioengineering.
